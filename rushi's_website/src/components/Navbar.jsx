@@ -6,39 +6,39 @@ const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<nav className="bg-sky-950  backdrop-blur-sm text-white py-4">
+		<nav className="bg-black  backdrop-blur-sm text-white py-4">
 			<div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
 				<div className="text-xl font-bold">Rushi's Portfolio</div>
 
 				{/* Desktop Menu */}
-				<div className="hidden md:flex space-x-8 font-bold">
+				<div className="hidden md:flex space-x-8 font-semibold">
 					<a
 						href="#home"
-						className="hover:text-blue-400 hover:scale-110 transition-transform ease-out"
+						className="hover:text-amber-200 hover:scale-110 transition-transform ease-out"
 					>
 						Home
 					</a>
 					<a
 						href="#about"
-						className="hover:text-blue-400 hover:scale-110 transition-transform ease-out"
+						className="hover:text-amber-200 hover:scale-110 transition-transform ease-out"
 					>
 						About
 					</a>
 					<a
 						href="#projects"
-						className="hover:text-blue-400 hover:scale-110 transition-transform ease-out"
+						className="hover:text-amber-200 hover:scale-110 transition-transform ease-out"
 					>
 						Projects
 					</a>
 					<a
 						href="#blog"
-						className="hover:text-blue-400 hover:scale-110 transition-transform ease-out"
+						className="hover:text-amber-200 hover:scale-110 transition-transform ease-out"
 					>
 						Blog
 					</a>
 					<a
 						href="#contact"
-						className="hover:text-blue-400 hover:scale-110 transition-transform ease-out "
+						className="hover:text-amber-200 hover:scale-110 transition-transform ease-out "
 					>
 						Contact
 					</a>

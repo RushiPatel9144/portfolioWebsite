@@ -6,7 +6,7 @@ const About = () => {
 			id="about"
 			className="py-20 px-5 bg-gray-100"
 		>
-			<h2 className="text-4xl font-bold text-blue-500 text-center mb-6">
+			<h2 className="text-4xl font-bold text-amber-500 text-center mb-6">
 				About Me
 			</h2>
 			<div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between space-x-12">
