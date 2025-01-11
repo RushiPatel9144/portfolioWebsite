@@ -5,7 +5,7 @@ import blogData from "../data/blogData.json"; // Import the blog data from the J
 const Blog = () => {
 	return (
 		<section id="blog" className="py-20 px-5 bg-gray-50">
-			<h2 className="text-4xl font-bold text-amber-500 text-center mb-6">Blog</h2>
+			<h2 className="text-4xl font-bold text-gray-900 text-center mb-6">Blog</h2>
 			<div className="max-w-4xl mx-auto">
 				{blogData.map((post, index) => (
 					<div key={index} className="border-b py-6 last:border-none">

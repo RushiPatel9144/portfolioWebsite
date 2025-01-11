@@ -1,5 +1,5 @@
 /** @format */
-import back from "../assets/4.jpg";
+import back from "../assets/2.jpg";
 
 const Hero = () => {
 	return (
@@ -19,34 +19,12 @@ const Hero = () => {
 					Student | Aspiring Developer | Tech Enthusiast
 				</p>
 				<a
-					href="#contact"
-					className="inline-block px-6 py-3 bg-amber-50 hover:bg-amber-200 rounded-lg text-black shadow-md transition duration-300 transform hover:scale-105"
+					href="#footer"
+					className="inline-block px-6 py-3 bg-amber-50 hover:bg-amber-400 rounded-lg text-black shadow-md transition duration-300 transform hover:scale-105"
 				>
 					Let's Connect
 				</a>
-				<div className="flex justify-center space-x-4 mt-2">
-					<a
-						href="https://github.com/RushiPatel9144"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-amber-400 hover:text-amber-500"
-					>
-						GitHub
-					</a>
-					<a
-						href="https://linkedin.com/in/rushipa"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-amber-400 hover:text-amber-500"					>
-						LinkedIn
-					</a>
-					<a
-						href="mailto:rushi.m.patel@outlook.com"
-						className="text-amber-400 hover:text-amber-500"
-					>
-						Email
-					</a>
-				</div>
+				
 			</div>
 		</section>
 	);

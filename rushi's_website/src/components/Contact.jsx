@@ -54,7 +54,7 @@ const Contact = () => {
 						id="name"
 						name="name"
 						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-blue-500"
+						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
 						placeholder="Your Name"
 					/>
 				</div>
@@ -70,7 +70,7 @@ const Contact = () => {
 						id="email"
 						name="email"
 						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-blue-500"
+						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
 						placeholder="Your Email"
 					/>
 				</div>
@@ -86,13 +86,13 @@ const Contact = () => {
 						name="message"
 						rows="4"
 						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-blue-500"
+						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
 						placeholder="Your Message"
 					></textarea>
 				</div>
 				<button
 					type="submit"
-					className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+					className="w-full bg-white text-black py-2 px-4 rounded hover:bg-amber-400 "
 				>
 					Send Message
 				</button>

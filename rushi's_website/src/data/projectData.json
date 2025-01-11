@@ -1,0 +1,36 @@
+[
+    {
+        "id": "1",
+        "name": "Smart Indoor Parking System",
+        "description": "An IoT-enabled system for efficient parking management.",
+        "details": "This project uses sensors, microcontrollers, and cloud integration to optimize parking space usage in real-time. The system can be accessed via a mobile app for both users and owners.",
+        "technologies": [
+            "IoT",
+            "Microcontrollers",
+            "Cloud Integration"
+        ],
+        "link": "#1"
+    },
+    {
+        "id": "2",
+        "name": "Portfolio Website",
+        "description": "A personal portfolio built using React and Tailwind CSS.",
+        "details": "A responsive portfolio showcasing projects, blogs, and contact details, built using modern frontend technologies.",
+        "technologies": [
+            "React",
+            "Tailwind CSS"
+        ],
+        "link": "#2"
+    },
+    {
+        "id": "3",
+        "name": "Security System",
+        "description": "A system to authenticate users entering parking lots.",
+        "details": "This project includes facial recognition and RFID-based authentication to ensure secure parking lot access.",
+        "technologies": [
+            "Facial Recognition",
+            "RFID"
+        ],
+        "link": "#3"
+    }
+]

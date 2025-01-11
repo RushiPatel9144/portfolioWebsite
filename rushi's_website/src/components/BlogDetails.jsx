@@ -14,7 +14,7 @@ const BlogDetails = () => {
 
 	return (
 		<section className="py-20 px-5 bg-gray-50">
-			<h2 className="text-4xl font-bold text-blue-500 text-center mb-6">
+			<h2 className="text-4xl font-bold text-gray-900 text-center mb-6">
 				{post.title}	
 			</h2>
 			<p className="text-gray-500 text-center text-sm mb-0">{post.date}</p>
