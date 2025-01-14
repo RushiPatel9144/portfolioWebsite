@@ -20,7 +20,16 @@ function App() {
 				<About />
 				<Projects />
 				<Routes>
-					
+					{/* Main Blog page */}
+					<Route
+						path="/"
+						element={<Blog />}
+					/>
+					{/* Individual Blog Post details */}
+					<Route
+						path="/blog/:id"
+						element={<BlogDetails />}
+					/>
 				</Routes>
 
 				<Contact />

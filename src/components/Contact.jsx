@@ -11,10 +11,10 @@ const Contact = () => {
 
 		emailjs
 			.sendForm(
-				"service_sxlu9bl", // Replace with your EmailJS Service ID
-				"template_6hoc6tt", // Replace with your EmailJS Template ID
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 				form.current,
-				"JMDRkSzccvUbi8oZS" // Replace with your Emai	lJS Public Key
+				import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 			)
 			.then(
 				(result) => {
