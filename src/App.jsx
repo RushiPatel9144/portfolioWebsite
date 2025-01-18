@@ -10,6 +10,7 @@ import Blog from "./components/Blog";
 import BlogDetails from "./components/BlogDetails"; // Import the BlogDetails component
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import CursorEffect from "./components/CursorEffect"; // Import the CursorEffect component
 
 function App() {
 	return (
@@ -31,7 +32,7 @@ function App() {
 						element={<BlogDetails />}
 					/>
 				</Routes>
-
+				<CursorEffect />
 				<Contact />
 				<Footer />
 			</div>

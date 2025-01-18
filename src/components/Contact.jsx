@@ -70,7 +70,7 @@ const Contact = () => {
 						id="email"
 						name="email"
 						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
+						className="w-full p-2 border rounded focus:outline-none focus:ring 	"
 						placeholder="Your Email"
 					/>
 				</div>
@@ -92,7 +92,7 @@ const Contact = () => {
 				</div>
 				<button
 					type="submit"
-					className="w-full bg-white text-black py-2 px-4 rounded hover:bg-amber-400 "
+					className="w-full bg-white text-black py-2 px-4 rounded bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 "
 				>
 					Send Message
 				</button>

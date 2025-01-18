@@ -13,18 +13,19 @@ const Hero = () => {
 			<div className="absolute inset-0 bg-black opacity-50"></div>
 			<div className="relative z-10 text-center py-32 px-5 mt-100">
 				<h1 className="text-5xl font-extrabold mb-4 text-shadow-md">
-					Hi, I'm Rushi Patel
+					Hi, I'm <sec className="italic">Rushi Patel</sec>
 				</h1>
 				<p className="text-lg mb-6">
 					Student | Aspiring Developer | Tech Enthusiast
 				</p>
 				<a
 					href="#footer"
-					className="inline-block px-6 py-3 bg-amber-50 hover:bg-amber-400 rounded-lg text-black shadow-md transition duration-300 transform hover:scale-105"
+					className="inline-block px-6 py-3 rounded-3xl shadow-md transition duration-300 transform hover:scale-105 bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:rotate-3 focus:outline-none"
 				>
 					Let's Connect
 				</a>
-				
+
+			
 			</div>
 		</section>
 	);

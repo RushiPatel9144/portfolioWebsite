@@ -1,5 +1,5 @@
 /** @format */
-import back from "../assets/1.jpg";
+import back from "../assets/10.jpg";
 import projects from "../data/projectData.json"; // Adjust path as necessary
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
 				backgroundImage: `url(${back})`, // Reference the imported image here
 			}}
 		>
-			<h2 className="text-4xl font-bold text-black text-center  mb-6">
+			<h2 className="text-4xl font-bold text-white text-center  mb-6">
 				My Projects
 			</h2>
 
@@ -21,14 +21,14 @@ const Projects = () => {
 				{projects.map((project, index) => (
 					<div
 						key={index}
-						className="p-6 backdrop-blur text-gray-900  rounded-2xl shadow-lg bg-white/35 hover:shadow-2xl 
+						className="p-6 backdrop-blur text-gray-100  rounded-2xl shadow-lg bg-white/35 hover:shadow-2xl 
 						 hover:bg-transparent/5 transition-opacity transition-colors transition-transform duration-600 hover:border hover:border-white 
 						 ease-in-out transform hover:scale-95 group"
 					>
-						<h3 className="text-xl font-bold mb-2 ">
+						<h3 className="text-xl font-bold mb-2 group-hover:scale-95 transition-transform ease-in">
 							{project.name}
 						</h3>
-						<p className="text-gray-800 mb-4  group-hover:scale-95 transition-transform ease-in">
+						<p className="text-gray-300 mb-4  group-hover:scale-95 transition-transform ease-in">
 							{project.description}
 						</p>
 						<a
