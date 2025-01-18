@@ -6,42 +6,62 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import ProjectDetails from "./components/ProjectDetails"; // Make sure to import ProjectDetails
+import ProjectDetails from "./components/ProjectDetails";
 import Blog from "./components/Blog";
-import BlogDetails from "./components/BlogDetails"; // Import the BlogDetails component
+import BlogDetails from "./components/BlogDetails";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import CursorEffect from "./components/CursorEffect"; // Import the CursorEffect component
+import CursorEffect from "./components/CursorEffect";
 
 function App() {
 	return (
 		<Router>
 			<div>
+				<CursorEffect />
 				<Navbar />
 				<Hero />
 				<About />
+
+				{/* Routes for Projects and Blog */}
 				<Routes>
-					{/* Routes for Projects */}
+					{/* Main Page Showing Projects and Blog (Always Visible) */}
 					<Route
 						path="/"
-						element={<Projects />}
-					/>
-					<Route
-						path="/project/:id"
-						element={<ProjectDetails />}
+						element={
+							<>
+								<Projects />
+								<Blog />
+							</>
+						}
 					/>
 
-					{/* Routes for Blog */}
+					{/* Specific Project Details */}
 					<Route
-						path="/blog"
-						element={<Blog />}
+						path="/project/:id"
+						element={
+							<>
+								<ProjectDetails />{" "}
+								{/* Keep Projects section visible */}
+								<Blog />{" "}
+								{/* Replace Blog section with BlogDetails */}
+							</>
+						}
 					/>
+
+					{/* Specific Blog Details */}
 					<Route
 						path="/blog/:id"
-						element={<BlogDetails />}
+						element={
+							<>
+								<Projects />{" "}
+								{/* Keep Projects section visible */}
+								<BlogDetails />{" "}
+								{/* Replace Blog section with BlogDetails */}
+							</>
+						}
 					/>
 				</Routes>
-				<CursorEffect />
+
 				<Contact />
 				<Footer />
 			</div>
