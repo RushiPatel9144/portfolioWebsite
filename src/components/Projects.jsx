@@ -8,7 +8,7 @@ const Projects = () => {
 	return (
 		<section
 			id="projects"
-			className="py-20 px-5 relative w-full h-2/4 bg-cover bg-center text-gray-900"
+			className="py-20 px-5 relative   bg-cover bg-center text-gray-900"
 			style={{
 				backgroundImage: `url(${back})`, // Reference the imported image here
 			}}

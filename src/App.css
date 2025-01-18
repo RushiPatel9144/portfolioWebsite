@@ -1,10 +1,38 @@
-/* General Container */
-#root {
-  max-width:max-content;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Ensure html and body take up the full height of the viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
+/* General Container - Ensures content takes up full width and is centered */
+#root {
+  width: 100%;
+  /* Ensure it takes up full width */
+  height: 100%;
+  /* Ensure it takes up full height */
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center content horizontally */
+  justify-content: flex-start;
+  /* Align content to the top */
+}
 
-
+/* Optional: If you want the content in a centered block */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  /* You can limit the width if desired */
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 2rem;
+}
