@@ -23,7 +23,7 @@ const Hero = () => {
 				</p>
 				<a
 					href="#footer"
-					className="inline-block px-6 py-3 rounded-3xl shadow-md transition duration-300 transform hover:scale-105 bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:rotate-3 focus:outline-none"
+					className="inline-block px-6 py-3 rounded-3xl shadow-md transition duration-300 transform bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 text-white font-bold hover:scale-110 hover:shadow-xl hover:rotate-3 focus:outline-none"
 				>
 					Let's Connect
 				</a>

@@ -22,7 +22,7 @@ const Projects = () => {
 					<div
 						key={project.id}
 						className="p-6 backdrop-blur text-gray-100 rounded-2xl shadow-lg bg-white/35 hover:shadow-2xl 
-                 hover:bg-transparent/5 transition-opacity transition-colors transition-transform duration-500 hover:border hover:border-white 
+                 hover:bg-transparent/5 transition-all duration-500 hover:border hover:border-white 
                  ease-in-out transform hover:scale-95 group"
 					>
 						<h3 className="text-xl font-bold mb-2 group-hover:scale-95 transition-transform ease-in">
