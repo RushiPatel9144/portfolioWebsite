@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import ProjectDetails from "./components/ProjectDetails"; // Make sure to import ProjectDetails
 import Blog from "./components/Blog";
 import BlogDetails from "./components/BlogDetails"; // Import the BlogDetails component
 import Contact from "./components/Contact";
@@ -19,14 +20,22 @@ function App() {
 				<Navbar />
 				<Hero />
 				<About />
-				<Projects />
 				<Routes>
-					{/* Main Blog page */}
+					{/* Routes for Projects */}
 					<Route
 						path="/"
+						element={<Projects />}
+					/>
+					<Route
+						path="/project/:id"
+						element={<ProjectDetails />}
+					/>
+
+					{/* Routes for Blog */}
+					<Route
+						path="/blog"
 						element={<Blog />}
 					/>
-					{/* Individual Blog Post details */}
 					<Route
 						path="/blog/:id"
 						element={<BlogDetails />}
