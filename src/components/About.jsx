@@ -1,12 +1,15 @@
 /** @format */
-import ProfilePhoto from "../assets/1.jpg";
+import ProfilePhoto from "../assets/profile.jpg";
+const songEmbedLink =
+	"https://open.spotify.com/embed/track/4Jle0Cjj88YkM7jbAjiFjf?utm_source=generator"; // Replace with your actual track ID
+
 const About = () => {
 	return (
 		<section
 			id="about"
-			className="py-20 px-5 bg-gray-100"
+			className="py-20 px-5 bg-gradient-to-r from-gray-100 to-amber-100"
 		>
-			<h2 className="text-4xl font-bold  text-gray-900 text-center mb-6">
+			<h2 className="text-4xl font-bold bg-gradient-to-r from-amber-500 via-amber-600 to-pink-600 text-transparent bg-clip-text text-center mb-6">
 				About Me
 			</h2>
 			<div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between space-x-12">
@@ -14,7 +17,7 @@ const About = () => {
 					<img
 						src={ProfilePhoto}
 						alt="Profile"
-						className="rounded-full w-48 h-48 mx-auto shadow-lg"
+						className=" border border-amber-500 rounded-full w-48 h-48 mx-auto shadow-lg object-cover"
 					/>
 				</div>
 				<div className="w-full md:w-1/2">
@@ -27,6 +30,18 @@ const About = () => {
 					</p>
 				</div>
 			</div>
+
+			<h2 className="text-2xl font-semibold bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 text-transparent bg-clip-text mb-4 text-center mt-12 ">
+				Current Favorite Song
+			</h2>
+			<iframe
+				src={songEmbedLink}
+				width="80%"
+				height="360"
+				allow="encrypted-media"
+				title="Favorite Song"
+				className="mx-auto"
+			></iframe>
 		</section>
 	);
 };

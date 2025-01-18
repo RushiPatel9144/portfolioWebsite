@@ -12,6 +12,7 @@ import BlogDetails from "./components/BlogDetails";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CursorEffect from "./components/CursorEffect";
+import FavoriteSong from "./components/FavouriteSong";
 
 function App() {
 	return (
