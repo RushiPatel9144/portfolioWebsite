@@ -70,7 +70,7 @@ const Contact = () => {
 						id="email"
 						name="email"
 						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring 	"
+						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
 						placeholder="Your Email"
 					/>
 				</div>

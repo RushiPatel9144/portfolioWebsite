@@ -13,10 +13,13 @@ const Hero = () => {
 			<div className="absolute inset-0 bg-black opacity-50"></div>
 			<div className="relative z-10 text-center py-32 px-5 mt-100">
 				<h1 className="text-5xl font-extrabold mb-4 text-shadow-md">
-					Hi, I'm <sec className="italic">Rushi Patel</sec>
+					Hi, I'm{" "}
+					<sec className=" bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent italic">
+						Rushi Patel
+					</sec>
 				</h1>
 				<p className="text-lg mb-6">
-					Student | Aspiring Developer | Tech Enthusiast
+					Student | Aspiring Computer Engineer | Tech Enthusiast
 				</p>
 				<a
 					href="#footer"
@@ -24,8 +27,6 @@ const Hero = () => {
 				>
 					Let's Connect
 				</a>
-
-			
 			</div>
 		</section>
 	);
