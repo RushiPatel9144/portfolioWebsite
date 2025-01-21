@@ -60,8 +60,8 @@
     },
     {
         "id": "66",
-        "name": "[Currently Working on this] Educational / Small Business Management System",
-        "description": "A system for Small schools and Samll Business's Management",
+        "name": "Educational / Small Business Management System",
+        "description": " [Currently Working on this] A system for Small schools and Samll Business's Management",
         "details": "This project includes a system which has CRUD application for Student/customer and there management and User Sessions",
         "technologies": [
             "Currently working on this"
