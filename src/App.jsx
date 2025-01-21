@@ -30,8 +30,8 @@ function App() {
 						path="/"
 						element={
 							<>
-								<Projects />
 								<Blog />
+								<Projects />
 							</>
 						}
 					/>
@@ -41,10 +41,10 @@ function App() {
 						path="/project/:id"
 						element={
 							<>
-								<ProjectDetails />{" "}
-								{/* Keep Projects section visible */}
 								<Blog />{" "}
 								{/* Replace Blog section with BlogDetails */}
+								<ProjectDetails />{" "}
+								{/* Keep Projects section visible */}
 							</>
 						}
 					/>
@@ -62,7 +62,6 @@ function App() {
 						}
 					/>
 				</Routes>
-
 				<Contact />
 				<Footer />
 			</div>
