@@ -7,7 +7,7 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="py-20 px-5 bg-gradient-to-r from-gray-100 to-amber-100"
+			className="py-20 px-5 bg-gradient-to-r from-gray-100 to-gray-300"
 		>
 			<h2 className="text-4xl font-bold bg-gradient-to-r from-amber-500 via-amber-600 to-pink-600 text-transparent bg-clip-text text-center mb-6">
 				About Me
@@ -22,7 +22,7 @@ const About = () => {
 				</div>
 				<div className="w-full md:w-1/2">
 					<p className="text-lg text-gray-700">
-						Hello! I'm Rushi Patel, an IT student with a passion for
+						Hello! I'm Rushi Patel, an CENG student with a passion for
 						technology and innovation. I enjoy solving problems,
 						building web applications, and learning new
 						technologies. I'm constantly exploring ways to enhance

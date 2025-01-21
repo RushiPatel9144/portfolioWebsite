@@ -7,7 +7,10 @@
         "technologies": [
             "IoT",
             "Microcontrollers",
-            "Cloud Integration"
+            "Cloud Integration",
+            "FireBase",
+            "Android Studio",
+            "Heroku"
         ],
         "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem"
     },
@@ -28,26 +31,25 @@
         "description": "A system to authenticate users entering parking lots.",
         "details": "This project includes facial recognition and RFID-based authentication to ensure secure parking lot access.",
         "technologies": [
-            "Facial Recognition",
-            "RFID"
+            "Raspberry pi",
+            "Sense Hat"
         ],
         "link": "#navbar"
     },
     {
-        "id": "11",
-        "name": "Smart Indoor Parking System",
+        "id": "44",
+        "name": "Home Network Lab",
         "description": "An IoT-enabled system for efficient parking management.",
         "details": "This project uses sensors, microcontrollers, and cloud integration to optimize parking space usage in real-time. The system can be accessed via a mobile app for both users and owners.",
         "technologies": [
             "IoT",
-            "Microcontrollers",
-            "Cloud Integration"
+            "Microcontrollers"
         ],
         "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem"
     },
     {
-        "id": "22",
-        "name": "Portfolio Website",
+        "id": "55",
+        "name": "The Weather App - Android App",
         "description": "A personal portfolio built using React and Tailwind CSS.",
         "details": "A responsive portfolio showcasing projects, blogs, and contact details, built using modern frontend technologies.",
         "technologies": [
@@ -57,13 +59,12 @@
         "link": "#navbar"
     },
     {
-        "id": "33",
-        "name": "Security System",
-        "description": "A system to authenticate users entering parking lots.",
-        "details": "This project includes facial recognition and RFID-based authentication to ensure secure parking lot access.",
+        "id": "66",
+        "name": "[Currently Working on this] Educational / Small Business Management System",
+        "description": "A system for Small schools and Samll Business's Management",
+        "details": "This project includes a system which has CRUD application for Student/customer and there management and User Sessions",
         "technologies": [
-            "Facial Recognition",
-            "RFID"
+            "Currently working on this"
         ],
         "link": "#navbar"
     }
