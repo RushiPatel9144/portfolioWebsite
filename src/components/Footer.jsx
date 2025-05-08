@@ -9,12 +9,8 @@ const Footer = () => {
 		<section>
 			<footer
 				id="footer"
-				className="relative bg-gradient-to-r from-gray-800 to-black text-white py-4 text-center dark:text-gray-100"
-				style={{
-					background: `url(${back})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-				}}
+				className="relative bg-black text-white py-4 text-center dark:text-gray-100"
+				
 			>
 				{/* Overlay for darkening */}
 				<div className="absolute inset-0 bg-black/10 backdrop-blur-sm z-0 dark:bg-black/40"></div>
