@@ -9,7 +9,7 @@ const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="relative w-full h-screen bg-cover bg-center text-white dark:text-white"
+			className="relative w-full h-fit bg-cover bg-center text-white dark:text-white"
 			style={{
 				backgroundImage: `url(${back})`,
 			}}
@@ -34,19 +34,19 @@ const Hero = () => {
 
 				<TypeAnimation
 					sequence={[
-						"Student",
-						1500,
-						"Aspiring Computer Engineer",
-						1500,
-						"Tech Enthusiast",
-						1500,
-						"Creative Problem Solver",
-						1200,
+						"21. Curious. Driven.",
+						1800,
+						"Student of Code & Consciousness",
+						2200,
+						"Aspiring Engineer, Eternal Learner",
+						2000,
+						"Building tech with soul.",
+						2200,
 					]}
 					wrapper="p"
 					speed={75}
 					className="text-lg mb-6 text-white dark:text-white"
-					repeat={3}
+					repeat={10}
 				/>
 
 				<a
