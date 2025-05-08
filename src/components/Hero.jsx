@@ -14,9 +14,9 @@ const Hero = () => {
 			<div className="relative z-10 text-center py-32 px-5 mt-100">
 				<h1 className="text-5xl font-extrabold mb-4 text-shadow-md">
 					Hi, I'm{" "}
-					<sec className=" bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent italic">
+					<span className=" 	 duration-300 transform p-2 bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent italic hover:rotate-3">
 						Rushi Patel
-					</sec>
+					</span>
 				</h1>
 				<p className="text-lg mb-6">
 					Student | Aspiring Computer Engineer | Tech Enthusiast

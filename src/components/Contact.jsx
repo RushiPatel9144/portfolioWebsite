@@ -1,6 +1,8 @@
 /** @format */
+
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import back from "../assets/12.jpg";
 
 const Contact = () => {
 	const form = useRef();
@@ -34,74 +36,87 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="py-20 px-5 bg-gradient-to-r from-gray-800 to-black text-white"
+			className="py-20 px-5 relative text-white overflow-hidden"
+			style={{
+				backgroundImage: `url(${back})`,
+				backgroundSize: "cover",
+				backgroundPosition: "center",
+			}}
 		>
-			<h2 className="text-4xl font-bold text-center mb-6">Contact Me</h2>
-			<form
-				ref={form}
-				onSubmit={sendEmail}
-				className="max-w-3xl mx-auto"
-			>
-				<div className="mb-4">
-					<label
-						className="block text-sm font-semibold mb-1"
-						htmlFor="name"
-					>
-						Name
-					</label>
-					<input
-						type="text"
-						id="name"
-						name="name"
-						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
-						placeholder="Your Name"
-					/>
-				</div>
-				<div className="mb-4">
-					<label
-						className="block text-sm font-semibold mb-1"
-						htmlFor="email"
-					>
-						Email
-					</label>
-					<input
-						type="email"
-						id="email"
-						name="email"
-						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
-						placeholder="Your Email"
-					/>
-				</div>
-				<div className="mb-4">
-					<label
-						className="block text-sm font-semibold mb-1"
-						htmlFor="message"
-					>
-						Message
-					</label>
-					<textarea
-						id="message"
-						name="message"
-						rows="4"
-						required
-						className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-amber-500"
-						placeholder="Your Message"
-					></textarea>
-				</div>
-				<button
-					type="submit"
-					className="w-full bg-white text-black py-2 px-4 rounded bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 "
+			{/* Overlay for darkening */}
+			<div className="absolute inset-0 bg-black/10 backdrop-blur-sm z-0"></div>
+
+			<div className="relative z-10 max-w-3xl mx-auto text-center">
+				<h2 className="text-4xl font-bold mb-10 text-white drop-shadow-md">
+					Contact Me
+				</h2>
+
+				<form
+					ref={form}
+					onSubmit={sendEmail}
+					className="bg-white/10 backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-white/20 text-left"
 				>
-					Send Message
-				</button>
-				{isSent && (
-					<p className="mt-4 text-green-500">
-						Thank you! Your message has been sent.
-					</p>
-				)}
-			</form>
+					<div className="mb-6">
+						<label
+							htmlFor="name"
+							className="block text-sm mb-2 font-semibold"
+						>
+							Name
+						</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							required
+							className="w-full p-3 rounded bg-white/10 text-white placeholder-white/70 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500"
+							placeholder="Your Name"
+						/>
+					</div>
+					<div className="mb-6">
+						<label
+							htmlFor="email"
+							className="block text-sm mb-2 font-semibold"
+						>
+							Email
+						</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required
+							className="w-full p-3 rounded bg-white/10 text-white placeholder-white/70 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500"
+							placeholder="you@example.com"
+						/>
+					</div>
+					<div className="mb-6">
+						<label
+							htmlFor="message"
+							className="block text-sm mb-2 font-semibold"
+						>
+							Message
+						</label>
+						<textarea
+							id="message"
+							name="message"
+							rows="4"
+							required
+							className="w-full p-3 rounded bg-white/10 text-white placeholder-white/70 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500"
+							placeholder="What's on your mind?"
+						></textarea>
+					</div>
+					<button
+						type="submit"
+						className=" hover:drop-shadow-[0_0_5px_#f59e0b] w-full py-3 font-bold text-white rounded bg-gradient-to-r from-pink-600 via-amber-500 to-yellow-400 hover:scale-x-95 transition-transform shadow-xl"
+					>
+						Send Message
+					</button>
+					{isSent && (
+						<p className="mt-6 text-green-400 text-sm text-center">
+							✅ Thank you! Your message has been sent.
+						</p>
+					)}
+				</form>
+			</div>
 		</section>
 	);
 };

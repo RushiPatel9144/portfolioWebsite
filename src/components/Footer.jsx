@@ -1,10 +1,18 @@
 /** @format */
 
 import React from "react";
+import back from "../assets/2.jpg";
 
 const Footer = () => {
 	return (
-		<footer id="footer" className="bg-gradient-to-r from-gray-800 to-black text-white py-4 text-center">
+		<footer
+			id="footer"
+			className="bg-gradient-to-r from-gray-800 to-black text-white py-4 text-center"
+			style={{
+				background: `url(${back})`,
+			}}
+		>
+			
 			<p className="text-sm">
 				&copy; {new Date().getFullYear()} Rushi Patel. All rights
 				reserved.

@@ -1,14 +1,10 @@
 /** @format */
 import ProfilePhoto from "../assets/profile.jpg";
-import back from "../assets/8.jpg";
+import back from "../assets/13.jpg";
 
 const songEmbedLinks = [
-	"https://open.spotify.com/embed/track/7eqoqGkKwgOaWNNHx90uEZ?utm_source=generator&theme=0",
-	"https://open.spotify.com/embed/track/0mO6oS60RST2sWmN2FKknP?utm_source=generator",
 	"https://open.spotify.com/embed/track/1rydhdFtKe2CRkiaVb7aGF?utm_source=generator",
-	"https://open.spotify.com/embed/track/4PXuZYWhkyGXQzfSRy2PW1?utm_source=generator",
-	"https://open.spotify.com/embed/track/2X485T9Z5Ly0xyaghN73ed?utm_source=generator",
-	"https://open.spotify.com/embed/track/6pWgRkpqVfxnj3WuIcJ7WP?utm_source=generator",
+	"https://open.spotify.com/embed/track/05kVyNUR9uibHta4jcGTTv?utm_source=generator"
 ];
 
 const About = () => {
@@ -18,7 +14,6 @@ const About = () => {
 			className="relative py-20 px-5 bg-cover bg-center"
 			style={{
 				background: `url(${back})`,
-				
 			}}
 		>
 			<div className="bg-gray-100 bg-transparent/50 p-8 rounded-3xl shadow-xl max-w-6xl mx-auto backdrop-blur-lg  transition-transform ease-in-out">
@@ -38,7 +33,7 @@ const About = () => {
 					{/* Description */}
 					<div className="text-center md:text-left flex-col">
 						<p className="text-lg text-gray-100 justify-center items-center leading-relaxed">
-							Hello! I'm{" "}
+							Hello! I'm 
 							<span className="font-semibold">Rushi Patel</span>,
 							a CENG student with a passion for technology and
 							innovation. I enjoy solving problems, building web
@@ -53,7 +48,7 @@ const About = () => {
 			{/* Currently Jamming Section */}
 			<div className="mt-16">
 				<div className=" p-8 rounded-3xl  bg-transparent/50 shadow-xl max-w-6xl mx-auto backdrop-blur-md ">
-					<h3 className="text-4xl font-semibold bg-gradient-to-r from-gray-100 to-gray-200 text-transparent bg-clip-text text-center p-2 mb-8">
+					<h3 className="text-4xl bg-gradient-to-r font-bold from-gray-100 to-gray-200 text-transparent bg-clip-text text-center p-2 mb-8">
 						Currently Jamming
 					</h3>
 					{/* Song Embeds */}

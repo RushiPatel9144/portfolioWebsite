@@ -1,18 +1,18 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "How I Built My Portfolio Website",
     "date": "January 2025",
     "content": "Building my portfolio website was an exciting journey that allowed me to combine creativity with technical expertise. I used React + Vite to set up the framework, which offered fast build times and a smooth development experience. From selecting the right design elements to ensuring the site is fully responsive, every step was a learning experience.\n\nKey highlights of the process:\n- Choosing React + Vite: It provided a modern, optimized setup for developing and deploying the project efficiently.\n- Personalized Design: I designed the website to reflect my personality and skills, using custom themes and animations.\n- Challenges: Configuring routing and state management for dynamic content was initially tricky, but diving into React Router and Context API helped me overcome these challenges.\n- Result: A sleek, functional portfolio that showcases my skills and projects."
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "My Journey in Networking",
     "date": "December 2024",
     "content": "This is the full content of my blog post about my journey in cybersecurity."
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "React vs. Vue: A Student’s Perspective",
     "date": "November 2024",
     "content": "This blog post discusses my perspective as a student on React vs. Vue."

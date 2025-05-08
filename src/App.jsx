@@ -12,60 +12,44 @@ import BlogDetails from "./components/BlogDetails";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CursorEffect from "./components/CursorEffect";
-import FavoriteSong from "./components/FavouriteSong";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	return (
 		<Router>
 			<div>
 				<CursorEffect />
+				<ScrollToTop />
 				<Navbar />
-				<Hero />
-				<About />
 
-				{/* Routes for Projects and Blog */}
 				<Routes>
-					{/* Main Page Showing Projects and Blog (Always Visible) */}
+					{/* Home Page: Hero, About, Projects, Blog */}
 					<Route
 						path="/"
 						element={
 							<>
-								
+								<Hero />
+								<About />
 								<Projects />
 								<Blog />
+								<Contact />
+								<Footer />
 							</>
 						}
 					/>
 
-					{/* Specific Project Details */}
+					{/* Project Details Page */}
 					<Route
 						path="/project/:id"
-						element={
-							<>
-								<ProjectDetails />{" "}
-								{/* Keep Projects section visible */}
-								<Blog />{" "}
-								{/* Replace Blog section with BlogDetails */}
-							</>
-						}
+						element={<ProjectDetails />}
 					/>
 
-					{/* Specific Blog Details */}
+					{/* Blog Details Page */}
 					<Route
 						path="/blog/:id"
-						element={
-							<>
-								
-								<Projects />{" "}
-								{/* Keep Projects section visible */}
-								<BlogDetails />{" "}
-								{/* Replace Blog section with BlogDetails */}
-							</>
-						}
+						element={<BlogDetails />}
 					/>
 				</Routes>
-				<Contact />
-				<Footer />
 			</div>
 		</Router>
 	);
