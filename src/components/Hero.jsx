@@ -12,12 +12,14 @@ const Hero = () => {
 		>
 			<div className="absolute inset-0 bg-black opacity-50"></div>
 			<div className="relative z-10 text-center py-32 px-2 sm:px-5 mt-100">
-				<h1 className="text-5xl font-extrabold mb-4 text-shadow-md">
-					Hi, I'm
-					<span className="duration-300 transform p-2 mr-2 bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent italic">
-						Rushi Patel
-					</span>
-				</h1>
+				<div className="p-2">
+					<h1 className="text-5xl font-extrabold mb-4 text-shadow-md">
+						Hi, I'm
+						<span className="duration-300 transform p-2  bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent italic">
+							Rushi Patel
+						</span>
+					</h1>
+				</div>
 				<p className="text-lg mb-6">
 					Student | Aspiring Computer Engineer | Tech Enthusiast
 				</p>
