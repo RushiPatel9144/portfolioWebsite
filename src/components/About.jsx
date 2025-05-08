@@ -21,7 +21,7 @@ const About = () => {
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
-				className="bg-gray-100 dark:bg-black/40 bg-transparent/50 p-8 rounded-3xl shadow-xl max-w-6xl mx-auto backdrop-blur-lg transition-transform ease-in-out"
+				className="bg-gray-100 dark:bg-black/40 bg-transparent/10 p-8 rounded-3xl shadow-xl max-w-6xl mx-auto backdrop-blur-lg transition-transform ease-in-out"
 			>
 				{/* About Me Section */}
 				<h2 className="text-4xl font-bold bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-200 dark:to-gray-500 text-transparent bg-clip-text text-center mb-12">
