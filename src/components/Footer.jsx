@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import back from "../assets/14.jpg";
+import back from "../assets/13.jpg";
 import { TypeAnimation } from "react-type-animation";
 
 const Footer = () => {
@@ -38,7 +38,7 @@ const Footer = () => {
 							]}
 							wrapper="span"
 							speed={50}
-							className="block mt-2 text-lg"
+							className="block mt-2 mx-4 text-lg"
 							repeat={1}
 						/>
 

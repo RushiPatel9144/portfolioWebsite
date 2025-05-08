@@ -45,7 +45,7 @@ const Blog = () => {
 					{blogData.map((post) => (
 						<motion.div
 							key={post.id}
-							className="relative p-6 rounded-2xl backdrop-blur bg-white/30 text-white shadow-lg transition-all duration-500 transform hover:scale-95 ease-in-out dark:bg-black/30 dark:hover:bg-white/10 hover:bg-white/10 dark:text-white"
+							className="relative p-6 rounded-2xl backdrop-blur bg-white/20 text-white shadow-lg transition-all duration-500 transform hover:scale-95 ease-in-out dark:bg-black/30 dark:hover:bg-white/10 hover:bg-white/40 dark:text-white"
 							whileHover={{ scale: 0.95 }}
 						>
 							<h3 className="text-xl font-bold mb-2">

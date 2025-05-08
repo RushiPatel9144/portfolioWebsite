@@ -3,9 +3,10 @@
 import React, { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-	const [darkMode, setDarkMode] = useState(
-		() => localStorage.getItem("theme") === "dark"
-	);
+	const [darkMode, setDarkMode] = useState(() => {
+		const storedTheme = localStorage.getItem("theme");
+		return storedTheme === "light" ? false : true; // Defaults to dark
+	});
 
 	useEffect(() => {
 		const root = window.document.documentElement;

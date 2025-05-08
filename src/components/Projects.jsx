@@ -38,7 +38,7 @@ const Projects = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.2, delay: index * 0.1 }}
 						whileHover={{ scale: 0.95 }}
-						className="p-8 backdrop-blur-xl text-white rounded-3xl shadow-2xl bg-white/20 dark:bg-black/30 hover:bg-white	/10  dark:hover:bg-white/10 duration-500  " // Scale down the whole card
+						className="p-8 backdrop-blur-xl text-white rounded-3xl shadow-2xl bg-white/20 dark:bg-black/30 hover:bg-white/30  dark:hover:bg-white/10 duration-500  " // Scale down the whole card
 					>
 						<div>
 							<h3 className="text-2xl font-semibold mb-4 text-center text-indigo-100">
