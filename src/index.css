@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to your global styles or a specific file */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 6px #ff6347, 0 0 12px #ff6347, 0 0 18px #ff4500, 0 0 24px #ff4500;
+    }
+
+    50% {
+        text-shadow: 0 0 6px #ffa500, 0 0 12px #ffa500, 0 0 18px #ff8c00, 0 0 24px #ff8c00;
+    }
+
+    100% {
+        text-shadow: 0 0 6px #ff6347, 0 0 12px #ff6347, 0 0 18px #ff4500, 0 0 24px #ff4500;
+    }
+}
+
+.glow-text {
+    animation: glowing 1.5s infinite ease-in-out;
+}

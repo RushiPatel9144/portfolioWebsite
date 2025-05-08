@@ -1,10 +1,12 @@
 /** @format */
+import React from "react";
 import ProfilePhoto from "../assets/profile.jpg";
 import back from "../assets/13.jpg";
+import { motion } from "framer-motion";
 
 const songEmbedLinks = [
 	"https://open.spotify.com/embed/track/1rydhdFtKe2CRkiaVb7aGF?utm_source=generator",
-	"https://open.spotify.com/embed/track/05kVyNUR9uibHta4jcGTTv?utm_source=generator"
+	"https://open.spotify.com/embed/track/05kVyNUR9uibHta4jcGTTv?utm_source=generator",
 ];
 
 const About = () => {
@@ -12,28 +14,34 @@ const About = () => {
 		<section
 			id="about"
 			className="relative py-20 px-5 bg-cover bg-center"
-			style={{
-				background: `url(${back})`,
-			}}
+			style={{ background: `url(${back})` }}
 		>
-			<div className="bg-gray-100 bg-transparent/50 p-8 rounded-3xl shadow-xl max-w-6xl mx-auto backdrop-blur-lg  transition-transform ease-in-out">
+			<motion.div
+				initial={{ opacity: 0, y: 40 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1 }}
+				viewport={{ once: true }}
+				className="bg-gray-100 dark:bg-black/40 bg-transparent/50 p-8 rounded-3xl shadow-xl max-w-6xl mx-auto backdrop-blur-lg transition-transform ease-in-out"
+			>
 				{/* About Me Section */}
-				<h2 className="text-4xl font-bold bg-gradient-to-r from-gray-100 to-gray-200 text-transparent bg-clip-text text-center mb-12">
+				<h2 className="text-4xl font-bold bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-200 dark:to-gray-500 text-transparent bg-clip-text text-center mb-12">
 					About Me
 				</h2>
+
 				<div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0 md:space-x-12">
 					{/* Profile Image */}
-					<div className="flex-shrink-0 ">
+					<div className="flex-shrink-0">
 						<img
 							src={ProfilePhoto}
 							alt="Profile"
 							className="rounded-full w-48 h-48 mx-auto shadow-lg object-cover"
 						/>
 					</div>
+
 					{/* Description */}
 					<div className="text-center md:text-left flex-col">
-						<p className="text-lg text-gray-100 justify-center items-center leading-relaxed">
-							Hello! I'm 
+						<p className="text-lg text-gray-900 dark:text-gray-200 leading-relaxed">
+							Hello! I'm{" "}
 							<span className="font-semibold">Rushi Patel</span>,
 							a CENG student with a passion for technology and
 							innovation. I enjoy solving problems, building web
@@ -43,22 +51,28 @@ const About = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 
 			{/* Currently Jamming Section */}
-			<div className="mt-16">
-				<div className=" p-8 rounded-3xl  bg-transparent/50 shadow-xl max-w-6xl mx-auto backdrop-blur-md ">
-					<h3 className="text-4xl bg-gradient-to-r font-bold from-gray-100 to-gray-200 text-transparent bg-clip-text text-center p-2 mb-8">
+			<motion.div
+				initial={{ opacity: 0, y: 40 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1.2 }}
+				viewport={{ once: true }}
+				className="mt-16"
+			>
+				<div className="p-8 rounded-3xl bg-transparent/50 dark:bg-black/40 shadow-xl max-w-6xl mx-auto backdrop-blur-md">
+					<h3 className="text-4xl font-bold bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-200 dark:to-gray-500 text-transparent bg-clip-text text-center p-2 mb-8">
 						Currently Jamming
 					</h3>
+
 					{/* Song Embeds */}
 					<div
 						className="grid gap-6"
 						style={{
 							display: "grid",
 							gridTemplateColumns:
-								"repeat(auto-fit, minmax(300px, 1fr))", // Responsive columns
-							gap: "20px", // Space between items
+								"repeat(auto-fit, minmax(300px, 1fr))",
 							justifyContent: "center",
 						}}
 					>
@@ -67,10 +81,10 @@ const About = () => {
 								key={index}
 								style={{
 									borderRadius: "15px",
-									border: "none", // Remove default iframe border
+									border: "none",
 									width: "100%",
 									height: "232px",
-									boxShadow: "0 2px 6px rgba(0, 0, 0, 0.1)", // Add shadow for each iframe
+									boxShadow: "0 2px 6px rgba(0, 0, 0, 0.1)",
 								}}
 								src={link}
 								allow="autoplay; encrypted-media"
@@ -80,7 +94,7 @@ const About = () => {
 						))}
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };
