@@ -5,6 +5,7 @@ import projects from "../data/projectData.json";
 import { motion } from "framer-motion";
 import ScrollProgress from "../components/ScrollProgress";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import ScrollToTop from "./ScrollToTop";
 
 const ProjectDetails = () => {
 	const { id } = useParams();
@@ -20,6 +21,7 @@ const ProjectDetails = () => {
 
 	return (
 		<>
+			<ScrollToTop />
 			<ScrollProgress />
 			<ScrollToTopButton />
 			<section className="min-h-screen bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-black text-gray-900 dark:text-white px-6 sm:px-20 py-16">
@@ -137,10 +139,10 @@ const ProjectDetails = () => {
 					)}
 
 					<Link
-						to="/#projects"
+						to="/#"
 						className="text-teal-500 underline text-base hover:text-teal-300 transition-colors duration-200"
 					>
-						← Back to Projects
+						← Back
 					</Link>
 				</motion.div>
 			</section>

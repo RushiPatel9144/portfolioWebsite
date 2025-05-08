@@ -26,7 +26,7 @@ const Hero = () => {
 				<div className="p-2">
 					<h1 className="text-5xl font-extrabold mb-4 text-shadow-md dark:text-white">
 						Hi, I'm
-						<span className="duration-300 transform p-2 hover:drop-shadow-[0_0_5px_#f59e0b] bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent italic">
+						<span className="duration-300 transform p-2 hover:drop-shadow-[0_0_5px_#f59e0b] bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent dark:italic	">
 							Rushi Patel
 						</span>
 					</h1>

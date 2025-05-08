@@ -20,7 +20,7 @@ function App() {
 	return (
 		<Router>
 			<div>
-				
+				<ScrollToTop />
 				<CursorEffect />
 				{/* <ScrollToTop /> */}
 				<Navbar />
