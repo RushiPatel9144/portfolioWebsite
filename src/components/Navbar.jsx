@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import LinkedinPhoto from "../assets/linkedin.png";
 import GithubPhoto from "../assets/github.png";
 import MailPhoto from "../assets/mail.svg";
+import InstagramPhoto from "../assets/instagram.png";
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
 					{/* Icons */}
 					<div className="flex space-x-4 items-center">
 						<a
-							href="https://github.com/yourusername"
+							href="https://github.com/RushiPatel9144"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="hover:drop-shadow-[0_0_5px_#f59e0b] transition-transform transform hover:scale-110"
@@ -48,12 +49,25 @@ const Navbar = () => {
 
 						<a
 							href="mailto:rushi.m.patel@outlook.com"
-							className="hover:drop-shadow-[0_0_5px_#f59e0b]  hover:text-amber-200 transition-transform transform hover:scale-110"
+							className="hover:drop-shadow-[0_0_5px_#f59e0b] hover:text-amber-200 transition-transform transform hover:scale-110"
 						>
 							<img
 								src={MailPhoto}
 								alt="Email"
-								className="w-5 h-5 brightness-0 invert	"
+								className="w-5 h-5 brightness-0 invert"
+							/>
+						</a>
+
+						<a
+							href="https://instagram.com/rushi.404"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:drop-shadow-[0_0_5px_#f472b6] transition-transform transform hover:scale-110"
+						>
+							<img
+								src={InstagramPhoto}
+								alt="Instagram"
+								className="w-5 h-5 brightness-0 invert"
 							/>
 						</a>
 					</div>
@@ -63,7 +77,7 @@ const Navbar = () => {
 						<a
 							key={item}
 							href={`/#${item.toLowerCase()}`}
-							className=" hover:drop-shadow-[0_0_5px_#f59e0b] transform hover:scale-110 hover:text-amber-200 transition-colors duration-200"
+							className="hover:drop-shadow-[0_0_5px_#f59e0b] transform hover:scale-110 hover:text-amber-200 transition-colors duration-200"
 						>
 							{item}
 						</a>
@@ -108,6 +122,59 @@ const Navbar = () => {
 							</a>
 						)
 					)}
+
+					{/* Mobile Icons */}
+					<div className="flex space-x-4 pt-4 border-t border-white/20">
+						<a
+							href="https://github.com/RushiPatel9144"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:drop-shadow-[0_0_5px_#f59e0b] transition-transform transform hover:scale-110"
+						>
+							<img
+								src={GithubPhoto}
+								alt="GitHub"
+								className="w-5 h-5 brightness-0 invert"
+							/>
+						</a>
+
+						<a
+							href="https://linkedin.com/in/rushipa"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:drop-shadow-[0_0_5px_#0ea5e9] transition-transform transform hover:scale-110"
+						>
+							<img
+								src={LinkedinPhoto}
+								alt="LinkedIn"
+								className="w-5 h-5 brightness-0 invert"
+							/>
+						</a>
+
+						<a
+							href="mailto:rushi.m.patel@outlook.com"
+							className="hover:drop-shadow-[0_0_5px_#f59e0b] transition-transform transform hover:scale-110"
+						>
+							<img
+								src={MailPhoto}
+								alt="Email"
+								className="w-5 h-5 brightness-0 invert"
+							/>
+						</a>
+
+						<a
+							href="https://instagram.com/rushi.404"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:drop-shadow-[0_0_5px_#f472b6] transition-transform transform hover:scale-110"
+						>
+							<img
+								src={InstagramPhoto}
+								alt="Instagram"
+								className="w-5 h-5 brightness-0 invert"
+							/>
+						</a>
+					</div>
 				</div>
 			)}
 		</header>

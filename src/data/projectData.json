@@ -1,6 +1,6 @@
 [
     {
-        "id": "11",
+        "id": "1",
         "name": "Smart Indoor Parking System",
         "description": "An IoT-enabled system for efficient parking management.",
         "details": "This project uses sensors, microcontrollers, and cloud integration to optimize parking space usage in real-time. The system can be accessed via a mobile app for both users and owners.",
@@ -15,7 +15,7 @@
         "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem"
     },
     {
-        "id": "22",
+        "id": "2",
         "name": "Portfolio Website",
         "description": "A personal portfolio built using React and Tailwind CSS.",
         "details": "A responsive portfolio showcasing projects, blogs, and contact details, built using modern frontend technologies.",
@@ -26,7 +26,7 @@
         "link": "#navbar"
     },
     {
-        "id": "33",
+        "id": "3",
         "name": "Security System",
         "description": "A system to authenticate users entering parking lots.",
         "details": "This project includes facial recognition and RFID-based authentication to ensure secure parking lot access.",
@@ -37,7 +37,7 @@
         "link": "#navbar"
     },
     {
-        "id": "44",
+        "id": "4",
         "name": "Home Network Lab",
         "description": "An IoT-enabled system for efficient parking management.",
         "details": "This project uses sensors, microcontrollers, and cloud integration to optimize parking space usage in real-time. The system can be accessed via a mobile app for both users and owners.",
@@ -48,7 +48,7 @@
         "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem"
     },
     {
-        "id": "55",
+        "id": "5",
         "name": "The Weather App - Android App",
         "description": "A personal portfolio built using React and Tailwind CSS.",
         "details": "A responsive portfolio showcasing projects, blogs, and contact details, built using modern frontend technologies.",
@@ -59,7 +59,7 @@
         "link": "https://weather.com/en-CA/weather/today/l/584018bec07ce9573837c14fa59da031fa6fcdeb1c3c9e3b2b27cb79ce254b5a?Goto=Redirected"
     },
     {
-        "id": "66",
+        "id": " 6",
         "name": "Educational / Small Business Management System",
         "description": " [Currently Working on this] A system for Small schools and Samll Business's Management",
         "details": "This project includes a system which has CRUD application for Student/customer and there management and User Sessions",
