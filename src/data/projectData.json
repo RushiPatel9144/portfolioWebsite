@@ -1,71 +1,199 @@
 [
     {
         "id": "1",
-        "name": "Smart Indoor Parking System",
-        "description": "An IoT-enabled system for efficient parking management.",
-        "details": "This project uses sensors, microcontrollers, and cloud integration to optimize parking space usage in real-time. The system can be accessed via a mobile app for both users and owners.",
-        "technologies": [
-            "IoT",
-            "Microcontrollers",
-            "Cloud Integration",
-            "FireBase",
-            "Android Studio",
-            "Heroku"
+        "name": "Smart Indoor Parking System - ParkIT",
+        "description": "An IoT-enabled system for real-time indoor parking management.",
+        "details": "A complete IoT solution that optimizes indoor parking through real-time vehicle detection, mobile interface for users and owners, and cloud-based data sync. Built with microcontrollers, sensors, Firebase, and Android Studio, this system delivers efficient, scalable parking control.",
+        "features": [
+            "Real-time slot detection using ultrasonic sensors",
+            "Android mobile app for both users and owners",
+            "Firebase integration for cloud syncing",
+            "Contactless smart parking experience",
+            "Scalable backend hosted on Heroku"
         ],
-        "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem"
+        "technologies": [
+            "NodeMCU (ESP8266)",
+            "Ultrasonic Sensors",
+            "Firebase Realtime DB",
+            "Android Studio (Java)",
+            "Heroku",
+            "IoT",
+            "Cloud Integration"
+        ],
+        "lessons": [
+            "Designed an end-to-end IoT architecture",
+            "Learned real-time data flow and cloud synchronization",
+            "Improved mobile UX for utility-based applications",
+            "Explored Firebase Functions and database structuring"
+        ],
+        "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem",
+        "externalLinks": {
+            "github": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem",
+            "demo": "",
+            "video": "https://youtu.be/-T0fFoDdSxg?si=m_EgJwIcOHfazB-g"
+        },
+        "images": [
+            "/projectsImages/parkIT1.jpg",
+            "/images/projects/parking2.png"
+        ]
     },
     {
         "id": "2",
         "name": "Portfolio Website",
-        "description": "A personal portfolio built using React and Tailwind CSS.",
-        "details": "A responsive portfolio showcasing projects, blogs, and contact details, built using modern frontend technologies.",
+        "description": "A personal portfolio showcasing projects and skills using modern frontend tech.",
+        "details": "A responsive and visually appealing portfolio built with React and Tailwind CSS. It highlights professional projects, blog content, and provides an easy contact interface.",
+        "features": [
+            "Smooth scroll navigation",
+            "Dark/light theme toggle",
+            "Projects filter and preview",
+            "Integrated contact form",
+            "Responsive design for all devices"
+        ],
         "technologies": [
             "React",
-            "Tailwind CSS"
+            "Tailwind CSS",
+            "Framer Motion",
+            "EmailJS"
         ],
-        "link": "#navbar"
+        "lessons": [
+            "Deepened understanding of modern frontend tools",
+            "Focused on clean UI/UX and accessibility",
+            "Learned animation and interaction design with Framer Motion"
+        ],
+        "link": "#navbar",
+        "externalLinks": {
+            "github": "",
+            "demo": "",
+            "video": ""
+        },
+        "images": [
+            "/images/projects/portfolio1.png"
+        ]
     },
     {
         "id": "3",
         "name": "Security System",
-        "description": "A system to authenticate users entering parking lots.",
-        "details": "This project includes facial recognition and RFID-based authentication to ensure secure parking lot access.",
-        "technologies": [
-            "Raspberry pi",
-            "Sense Hat"
+        "description": "A secure access control system using face recognition and RFID.",
+        "details": "Built for parking lot access, this system uses Raspberry Pi with facial recognition and RFID modules for dual-layered authentication, ensuring only verified users can enter.",
+        "features": [
+            "Face recognition for user identification",
+            "RFID-based card scanning",
+            "Real-time access logs",
+            "Secure entry with multiple checks"
         ],
-        "link": "#navbar"
+        "technologies": [
+            "Raspberry Pi",
+            "OpenCV",
+            "RFID Modules",
+            "Python"
+        ],
+        "lessons": [
+            "Learned image processing and facial recognition",
+            "Integrated hardware modules with software logic",
+            "Managed real-time authentication systems"
+        ],
+        "link": "#navbar",
+        "externalLinks": {
+            "github": "",
+            "demo": "",
+            "video": ""
+        },
+        "images": [
+            "/images/projects/security1.png"
+        ]
     },
     {
         "id": "4",
         "name": "Home Network Lab",
-        "description": "An IoT-enabled system for efficient parking management.",
-        "details": "This project uses sensors, microcontrollers, and cloud integration to optimize parking space usage in real-time. The system can be accessed via a mobile app for both users and owners.",
-        "technologies": [
-            "IoT",
-            "Microcontrollers"
+        "description": "A simulated enterprise network infrastructure setup and analysis.",
+        "details": "A full-scale networking lab project to configure routers, switches, VLANs, and security protocols using Cisco Packet Tracer. Designed to simulate enterprise-level environments.",
+        "features": [
+            "Router and switch configuration",
+            "VLAN segmentation",
+            "Access Control Lists (ACLs)",
+            "IP addressing and DHCP",
+            "Network topology design"
         ],
-        "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem"
+        "technologies": [
+            "Cisco Packet Tracer",
+            "Networking Fundamentals",
+            "IPv4/IPv6",
+            "ACLs and VLANs"
+        ],
+        "lessons": [
+            "Understood enterprise networking concepts",
+            "Configured secure and segmented networks",
+            "Learned subnetting and routing protocols"
+        ],
+        "link": "https://github.com/RushiPatel9144/HomeNetworkLab",
+        "externalLinks": {
+            "github": "https://github.com/RushiPatel9144/HomeNetworkLab",
+            "demo": "",
+            "video": ""
+        },
+        "images": [
+            "/images/projects/networklab1.png"
+        ]
     },
     {
         "id": "5",
-        "name": "The Weather App - Android App",
-        "description": "A personal portfolio built using React and Tailwind CSS.",
-        "details": "A responsive portfolio showcasing projects, blogs, and contact details, built using modern frontend technologies.",
-        "technologies": [
-            "React",
-            "Tailwind CSS"
+        "name": "The Weather App - Android",
+        "description": "An Android application displaying real-time weather updates.",
+        "details": "A simple yet elegant Android app that fetches weather data based on user location using a weather API. It offers temperature, condition, and forecasts in an intuitive UI.",
+        "features": [
+            "Location-based weather fetching",
+            "Modern UI for clean readability",
+            "Multi-day forecast support",
+            "Responsive layout for devices"
         ],
-        "link": "https://weather.com/en-CA/weather/today/l/584018bec07ce9573837c14fa59da031fa6fcdeb1c3c9e3b2b27cb79ce254b5a?Goto=Redirected"
+        "technologies": [
+            "Android Studio (Java)",
+            "OpenWeatherMap API",
+            "XML Layouts"
+        ],
+        "lessons": [
+            "Worked with external APIs",
+            "Practiced UI design principles on Android",
+            "Enhanced app responsiveness and error handling"
+        ],
+        "link": "https://weather.com/en-CA/weather/today/l/584018bec07ce9573837c14fa59da031fa6fcdeb1c3c9e3b2b27cb79ce254b5a?Goto=Redirected",
+        "externalLinks": {
+            "github": "",
+            "demo": "",
+            "video": ""
+        },
+        "images": [
+            "../images/projects/weather1.png"
+        ]
     },
     {
-        "id": " 6",
+        "id": "6",
         "name": "Educational / Small Business Management System",
-        "description": " [Currently Working on this] A system for Small schools and Samll Business's Management",
-        "details": "This project includes a system which has CRUD application for Student/customer and there management and User Sessions",
-        "technologies": [
-            "Currently working on this"
+        "description": "[WIP] A CRUD system for managing students/customers and sessions.",
+        "details": "This system provides an admin dashboard for small schools and businesses to manage student/customer records, sessions, and communication efficiently. Currently under development.",
+        "features": [
+            "CRUD operations for user data",
+            "Role-based access and session control",
+            "Simple dashboard interface"
         ],
-        "link": "#navbar"
+        "technologies": [
+            "React",
+            "Firebase",
+            "Tailwind CSS"
+        ],
+        "lessons": [
+            "Architecting scalable management tools",
+            "Firebase integration for real-time updates",
+            "Clean dashboard design"
+        ],
+        "link": "#navbar",
+        "externalLinks": {
+            "github": "",
+            "demo": "",
+            "video": ""
+        },
+        "images": [
+            "/images/projects/management1.png"
+        ]
     }
 ]

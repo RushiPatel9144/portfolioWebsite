@@ -13,15 +13,19 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CursorEffect from "./components/CursorEffect";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollProgress from "./components/ScrollProgress";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
 	return (
 		<Router>
 			<div>
+				
 				<CursorEffect />
-				<ScrollToTop />
+				{/* <ScrollToTop /> */}
 				<Navbar />
-
+				<ScrollProgress />
+				<ScrollToTopButton />
 				<Routes>
 					{/* Home Page: Hero, About, Projects, Blog */}
 					<Route
