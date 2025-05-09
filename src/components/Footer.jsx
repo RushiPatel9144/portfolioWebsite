@@ -36,9 +36,9 @@ const Footer = () => {
 				<div className="relative z-10">
 					{/* Bhagavad Gita Quote */}
 					<motion.p
-						initial={{ scale: 0.8, opacity: 0 }}
-						animate={hasAnimated ? { scale: 1.05, opacity: 1 } : {}}
-						transition={{ duration: 1 }}
+						initial={{ scale: 0.5, opacity: 0 }}
+						animate={hasAnimated ? { scale: 1.00, opacity: 1 } : {}}
+						transition={{ duration: 1}}
 						className="text-sm mt-2 italic dark:text-gray-300"
 					>
 						<span className="block text-2xl font-bold text-yellow-500 glow-text">

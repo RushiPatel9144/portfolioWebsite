@@ -15,6 +15,7 @@ import CursorEffect from "./components/CursorEffect";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollProgress from "./components/ScrollProgress";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import SectionDivider from "./components/SectionDivider";
 
 function App() {
 	return (
@@ -34,9 +35,13 @@ function App() {
 							<>
 								<Hero />
 								<About />
+								<SectionDivider />
 								<Projects />
+								<SectionDivider />
 								<Blog />
+								<SectionDivider />
 								<Contact />
+
 								<Footer />
 							</>
 						}

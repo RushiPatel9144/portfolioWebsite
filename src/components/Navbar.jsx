@@ -6,6 +6,7 @@ import GithubPhoto from "../assets/github.png";
 import MailPhoto from "../assets/mail.svg";
 import InstagramPhoto from "../assets/instagram.png";
 import ThemeToggle from "./ThemeToggle";
+import CCNABadgePhoto from "../assets/ccna-badge.png"; // Import the badge image
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,21 +19,17 @@ const Navbar = () => {
 					<div className="text-2xl font-bold tracking-wide drop-shadow-md text-black dark:text-white">
 						<a href="/#">
 							rushi
-							<span className=" text-white dark:text-amber-400">
+							<span className=" text-gray-300 dark:text-amber-400">
 								.
 							</span>
-							4
-							<span className=" text-white dark:text-amber-400">
-								0
-							</span>
-							4
+							404
 						</a>
 					</div>
 					<ThemeToggle />
 				</div>
 
 				{/* Desktop Links */}
-				<div className="hidden md:flex items-center space-x-8 font-semibold text-sm">
+				<div className="hidden mx-2 md:flex items-center space-x-8 font-semibold text-sm">
 					<div className="flex space-x-4 items-center">
 						{/* Social Links */}
 						<a
@@ -84,10 +81,22 @@ const Navbar = () => {
 								className="w-5 h-5 dark:brightness-0 dark:invert"
 							/>
 						</a>
+
+						{/* CCNA Badge Link */}
+						<a
+							href="https://www.credly.com/badges/507cb797-c90f-42d7-b59d-c1da20125ce3/linked_in?t=sgpyg8" // Replace with your actual CCNA badge URL
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:drop-shadow-[0_0_5px_#34d399] transition-transform transform hover:scale-110"
+						>
+							<span className="w-fit ml-4 h-8 flex items-center justify-center  font-semibold  border-gray-300 dark:border-white">
+								ccna badge
+							</span>
+						</a>
 					</div>
 
 					{/* Navigation Links */}
-					{["About", "Projects", "Blog", "Contact"].map((item) => (
+					{["about", "projects", "blog", "contact"].map((item) => (
 						<a
 							key={item}
 							href={`/#${item.toLowerCase()}`}
@@ -126,9 +135,9 @@ const Navbar = () => {
 			{isMenuOpen && (
 				<div
 					onClick={() => setIsMenuOpen(!isMenuOpen)}
-					className="md:hidden backdrop-blur-md bg-white/30 dark:bg-black/30 backdrop-blur-md px-6 py-4 shadow-lg space-y-4 font-medium text-black dark:text-white"
+					className="md:hidden bg-white/30 dark:bg-black/30 backdrop-blur-md px-6 py-4 shadow-lg space-y-4 font-medium text-black dark:text-white"
 				>
-					{["Home", "About", "Projects", "Blog", "Contact"].map(
+					{["home", "about", "projects", "blog", "contact"].map(
 						(item) => (
 							<a
 								key={item}
@@ -139,7 +148,14 @@ const Navbar = () => {
 							</a>
 						)
 					)}
-
+					<a
+						href="https://www.credly.com/badges/507cb797-c90f-42d7-b59d-c1da20125ce3/linked_in?t=sgpyg8" // Replace with your actual CCNA badge URL
+						target="_blank"
+						rel="noopener noreferrer"
+						className="block hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+					>
+						ccna badge
+					</a>
 					<div className="flex space-x-4 pt-4 border-t border-black/10 dark:border-white/20">
 						{/* Socials (Mobile) */}
 						<a

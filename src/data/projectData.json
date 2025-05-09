@@ -1,144 +1,99 @@
 [
     {
         "id": "1",
-        "name": "Smart Indoor Parking System - ParkIT",
-        "description": "An IoT-enabled system for real-time indoor parking management.",
-        "details": "A complete IoT solution that optimizes indoor parking through real-time vehicle detection, mobile interface for users and owners, and cloud-based data sync. Built with microcontrollers, sensors, Firebase, and Android Studio, this system delivers efficient, scalable parking control.",
+        "name": "Parkit - Smart Indoor Parking System",
+        "description": "A smart IoT-powered indoor parking solution integrating a mobile app with embedded sensors and cloud database to enable real-time parking management.",
+        "details": "Developed as a capstone project, Parkit integrates Raspberry Pi hardware, various sensors (BME680, VL53L1X, RFID), and Firebase to manage parking slots. It allows users to book, cancel, and access parking spaces securely via NFC, while owners can monitor availability, occupancy, and user profiles. The project featured modular hardware design, mobile app development, secure database integration, and sustainability measures.",
         "features": [
-            "Real-time slot detection using ultrasonic sensors",
-            "Android mobile app for both users and owners",
-            "Firebase integration for cloud syncing",
-            "Contactless smart parking experience",
-            "Scalable backend hosted on Heroku"
+            "Real-time parking slot availability and updates",
+            "Mobile app integration with booking, NFC-based access",
+            "Secure authentication using Firebase and RFID modules",
+            "Air quality and environmental sensing",
+            "Production-tested IoT and app synchronization",
+            "Modular, sustainable, and upgradeable hardware design"
         ],
         "technologies": [
-            "NodeMCU (ESP8266)",
-            "Ultrasonic Sensors",
-            "Firebase Realtime DB",
-            "Android Studio (Java)",
-            "Heroku",
-            "IoT",
-            "Cloud Integration"
+            "Firebase (Realtime DB, Firestore, Storage, Auth)",
+            "Raspberry Pi 4",
+            "BME680 Air Quality Sensor",
+            "VL53L1X Distance Sensor",
+            "PN532 RFID Module",
+            "OLED and Alphanumeric Displays",
+            "KiCad (PCB Design)",
+            "Android (Java/Kotlin)",
+            "JUnit, Espresso, Robolectric"
         ],
         "lessons": [
-            "Designed an end-to-end IoT architecture",
-            "Learned real-time data flow and cloud synchronization",
-            "Improved mobile UX for utility-based applications",
-            "Explored Firebase Functions and database structuring"
+            "End-to-end IoT system design and deployment",
+            "Secure and real-time data handling with Firebase",
+            "Hardware-software integration challenges",
+            "Unit and production testing strategies",
+            "Sustainable product design using modular components",
+            "Effective collaboration and project documentation"
         ],
-        "link": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem",
-        "externalLinks": {
+        "links": {
             "github": "https://github.com/RushiPatel9144/SmartIndoorParkingSystem",
-            "demo": "",
-            "video": "https://youtu.be/-T0fFoDdSxg?si=m_EgJwIcOHfazB-g"
+            "proposal": "",
+            "documentation": "https://github.com/PrototypeZone/hardwareproject-RaghavSharma7255",
+            "video": "https://youtu.be/-T0fFoDdSxg?si=U7SV5nFMQtRsb_AO"
         },
         "images": [
             "/projectsImages/parkIT1.jpg",
-            "/images/projects/parking2.png"
-        ]
-    },
-    {
-        "id": "2",
-        "name": "Portfolio Website",
-        "description": "A personal portfolio showcasing projects and skills using modern frontend tech.",
-        "details": "A responsive and visually appealing portfolio built with React and Tailwind CSS. It highlights professional projects, blog content, and provides an easy contact interface.",
-        "features": [
-            "Smooth scroll navigation",
-            "Dark/light theme toggle",
-            "Projects filter and preview",
-            "Integrated contact form",
-            "Responsive design for all devices"
-        ],
-        "technologies": [
-            "React",
-            "Tailwind CSS",
-            "Framer Motion",
-            "EmailJS"
-        ],
-        "lessons": [
-            "Deepened understanding of modern frontend tools",
-            "Focused on clean UI/UX and accessibility",
-            "Learned animation and interaction design with Framer Motion"
-        ],
-        "link": "#navbar",
-        "externalLinks": {
-            "github": "",
-            "demo": "",
-            "video": ""
-        },
-        "images": [
-            "/images/projects/portfolio1.png"
-        ]
-    },
-    {
-        "id": "3",
-        "name": "Security System",
-        "description": "A secure access control system using face recognition and RFID.",
-        "details": "Built for parking lot access, this system uses Raspberry Pi with facial recognition and RFID modules for dual-layered authentication, ensuring only verified users can enter.",
-        "features": [
-            "Face recognition for user identification",
-            "RFID-based card scanning",
-            "Real-time access logs",
-            "Secure entry with multiple checks"
-        ],
-        "technologies": [
-            "Raspberry Pi",
-            "OpenCV",
-            "RFID Modules",
-            "Python"
-        ],
-        "lessons": [
-            "Learned image processing and facial recognition",
-            "Integrated hardware modules with software logic",
-            "Managed real-time authentication systems"
-        ],
-        "link": "#navbar",
-        "externalLinks": {
-            "github": "",
-            "demo": "",
-            "video": ""
-        },
-        "images": [
-            "/images/projects/security1.png"
+            "/projectsImages/parkIT2.jpg"
         ]
     },
     {
         "id": "4",
-        "name": "Home Network Lab",
-        "description": "A simulated enterprise network infrastructure setup and analysis.",
-        "details": "A full-scale networking lab project to configure routers, switches, VLANs, and security protocols using Cisco Packet Tracer. Designed to simulate enterprise-level environments.",
+        "name": "Advanced Enterprise Network Lab",
+        "description": "A comprehensive enterprise network simulation showcasing the use of Cisco devices and protocols for real-world networking scenarios.",
+        "details": "This project simulates an enterprise-level network environment using Cisco Packet Tracer, featuring a fully configured network that includes routers, switches, VLANs, routing protocols, ACLs, and security measures. The goal was to design and deploy a secure, segmented, and efficient network for a growing enterprise with multiple departments and remote locations.",
         "features": [
-            "Router and switch configuration",
-            "VLAN segmentation",
-            "Access Control Lists (ACLs)",
-            "IP addressing and DHCP",
-            "Network topology design"
+            "Router and Switch Configuration",
+            "VLAN Segmentation for Departmental Isolation",
+            "Access Control Lists (ACLs) for Enhanced Security",
+            "Dynamic and Static Routing Protocols (OSPF, RIP, EIGRP)",
+            "Subnetting for Efficient IP Address Management",
+            "DHCP and NAT Configuration",
+            "WAN Simulation using Serial Links and PPP",
+            "Remote Access VPN for Secure Connectivity",
+            "Network Address Translation (NAT) for Internet Access",
+            "WAN Optimization and Load Balancing"
         ],
         "technologies": [
             "Cisco Packet Tracer",
-            "Networking Fundamentals",
-            "IPv4/IPv6",
-            "ACLs and VLANs"
+            "Routing Protocols (OSPF, RIP, EIGRP)",
+            "Subnetting and VLSM",
+            "ACLs and VLANs",
+            "Network Security (VPN, ACL, NAT)",
+            "IP Addressing (IPv4/IPv6)",
+            "WAN Technologies (PPP, Frame Relay, and more)"
         ],
         "lessons": [
-            "Understood enterprise networking concepts",
-            "Configured secure and segmented networks",
-            "Learned subnetting and routing protocols"
+            "Learned to design and implement VLANs for network segmentation.",
+            "Configured advanced routing protocols for optimal network routing.",
+            "Mastered IP subnetting, including variable-length subnet masking (VLSM).",
+            "Implemented security protocols using ACLs to restrict unauthorized access.",
+            "Gained hands-on experience in WAN technologies like PPP and Frame Relay.",
+            "Designed and deployed secure VPN solutions for remote access.",
+            "Configured DHCP servers and NAT for IP address allocation and internet access.",
+            "Understood how to troubleshoot and optimize enterprise networks."
         ],
-        "link": "https://github.com/RushiPatel9144/HomeNetworkLab",
-        "externalLinks": {
-            "github": "https://github.com/RushiPatel9144/HomeNetworkLab",
-            "demo": "",
-            "video": ""
+        "links": {
+            "github": "https://github.com/RushiPatel9144/networking-projects",
+            "proposal": "",
+            "documentation": "",
+            "video": "https://youtu.be/-T0fFoDdSxg?si=U7SV5nFMQtRsb_AO"
         },
         "images": [
-            "/images/projects/networklab1.png"
+            "/images/projects/networklab1.png",
+            "/images/projects/networklab2.png",
+            "/images/projects/networklab3.png"
         ]
     },
     {
         "id": "5",
         "name": "The Weather App - Android",
-        "description": "An Android application displaying real-time weather updates.",
+        "description": " Coming Soon An Android application displaying real-time weather updates.",
         "details": "A simple yet elegant Android app that fetches weather data based on user location using a weather API. It offers temperature, condition, and forecasts in an intuitive UI.",
         "features": [
             "Location-based weather fetching",
@@ -169,7 +124,7 @@
     {
         "id": "6",
         "name": "Educational / Small Business Management System",
-        "description": "[WIP] A CRUD system for managing students/customers and sessions.",
+        "description": "Coming Soon [WIP] A CRUD system for managing students/customers and sessions.",
         "details": "This system provides an admin dashboard for small schools and businesses to manage student/customer records, sessions, and communication efficiently. Currently under development.",
         "features": [
             "CRUD operations for user data",

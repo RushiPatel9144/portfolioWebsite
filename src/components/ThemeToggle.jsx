@@ -25,12 +25,12 @@ const ThemeToggle = () => {
 			className={`w-16 h-8 flex items-center bg-gray-300 dark:bg-gray-700 rounded-full p-1 cursor-pointer transition-colors duration-300`}
 		>
 			<div
-				className={`bg-white dark:bg-yellow-300 w-6 h-6 rounded-full shadow-md transform duration-300 ease-in-out ${
+				className={`bg-white dark:bg-black 300 w-6 h-6 rounded-full shadow-md transform duration-300 ease-in-out ${
 					darkMode ? "translate-x-8" : "translate-x-0"
 				}`}
 			>
 				<span className="block text-center text-xs leading-6">
-					{darkMode ? "🌞" : "🌙"}
+					{darkMode ? "🌙" : "🌞"}
 				</span>
 			</div>
 		</div>

@@ -23,6 +23,7 @@ export default {
 				xxl: "3rem", // Extra large for spiritual headings
 				xxxl: "4rem", // Larger text for impactful quotes
 			},
+			glassDark: "#1f1f1f99",
 		},
 	},
 	plugins: [],

@@ -4,6 +4,7 @@ import React from "react";
 import back from "../assets/2.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll"; // Import react-scroll's Link component
 
 const Hero = () => {
 	return (
@@ -49,12 +50,24 @@ const Hero = () => {
 					repeat={10}
 				/>
 
-				<a
-					href="#footer"
-					className="inline-block px-6 py-3 rounded-3xl shadow-md transition duration-300 transform bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 text-white font-bold hover:scale-110 hover:shadow-xl hover:rotate-3 focus:outline-none"
-				>
-					Let's Connect
-				</a>
+				{/* Button to Scroll to Resume Section */}
+				<div className="flex justify-center flex-wrap gap-4 mt-6">
+					<Link
+						to="resume"
+						smooth={true}
+						duration={500}
+						className="px-6 py-3 rounded-3xl shadow-md transition duration-300 transform bg-gradient-to-r from-amber-500 via-amber-600 to-pink-500 text-white font-bold hover:scale-110 hover:shadow-xl hover:-rotate-2 focus:outline-none"
+					>
+						Download Resume
+					</Link>
+
+					<a
+						href="#contact"
+						className="px-6 py-3 rounded-3xl shadow-md transition duration-300 transform bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 text-white font-bold hover:scale-110 hover:shadow-xl hover:rotate-2 focus:outline-none"
+					>
+						Let's Connect
+					</a>
+				</div>
 			</motion.div>
 		</section>
 	);
