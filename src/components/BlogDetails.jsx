@@ -25,21 +25,25 @@ const BlogDetails = () => {
 	}
 
 	return (
-		<section className="py-20 px-5 bg-white min-h-screen">
+		<section className="min-h-screen bg-white dark:bg-gray-900 py-20 px-6">
 			<div className="max-w-4xl mx-auto">
 				<Link
 					to="/#blog"
-					className="text-blue-500 hover:underline text-sm mb-4 inline-block"
+					className="text-blue-600 dark:text-blue-400 text-sm mb-6 inline-block hover:underline"
 				>
 					← Back to Articles
 				</Link>
 
-				<h1 className="text-4xl font-bold text-gray-900 mb-4">
-					{post.title}
-				</h1>
-				<p className="text-gray-500 text-sm mb-8">{post.date}</p>
+				<header className="mb-12 text-center">
+					<h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-3">
+						{post.title}
+					</h1>
+					<p className="text-gray-500 dark:text-gray-400 text-sm">
+						{post.date}
+					</p>
+				</header>
 
-				<div className="prose prose-lg prose-indigo max-w-none text-gray-800">
+				<article className="prose prose-lg dark:prose-invert prose-gray max-w-none">
 					{typeof post.content === "string" ? (
 						<p>{post.content}</p>
 					) : (
@@ -47,7 +51,7 @@ const BlogDetails = () => {
 							<p key={index}>{paragraph}</p>
 						))
 					)}
-				</div>
+				</article>
 			</div>
 		</section>
 	);
